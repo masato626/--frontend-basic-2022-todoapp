@@ -6,7 +6,7 @@ import FONTFAMILY from "../../../variables/font_family";
 import BREAKPOINT from "../../../variables/breakpoint";
 
 const Title=()=>{
-    return <StyledText>SIMPLE TODO AP</StyledText>;
+    return <StyledText>SIMPLE TODO APPs</StyledText>;
 }
 export default Title;
 

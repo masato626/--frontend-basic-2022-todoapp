@@ -17,10 +17,9 @@ const HoverCircle = styled.div`
   transition: 0.2s;
   background-color: ${COLOR.LIGHT_GRAY};
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
 `;
 
 const Styledbutton = styled.button`
@@ -42,7 +41,6 @@ const Styledbutton = styled.button`
   }
 `;
 const Img = styled.img`
-  width: 15px;
-  height: 15px;
-  top: 10px;
+  width: 100%;
+  height: 100%;
 `;

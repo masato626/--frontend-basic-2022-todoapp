@@ -4,10 +4,10 @@ import pencil from "../../../assets/svg/pencil.svg";
 import COLOR from "../../../variables/color.js";
 const EditButton = ({ onClick }) => {
   return (
-    <Styledbutton onClick={onClick}>
+    <StyledButton onClick={onClick}>
       <HoverCircle />
       <Img src={pencil} />
-    </Styledbutton>
+    </StyledButton>
   );
 };
 export default EditButton;
@@ -22,7 +22,7 @@ const HoverCircle = styled.div`
   margin: auto 0;
 `;
 
-const Styledbutton = styled.button`
+const StyledButton = styled.button`
   padding: 0;
   width: 20px;
   height: 20px;

@@ -4,42 +4,42 @@ import COLOR from "../../../variables/color.js";
 import TEXT from "../../../variables/texts.js";
 import plus from "../../../assets/svg/plus.svg";
 
-const AddTaskButton = ({ OnClick }) => {
+const AddTaskButton = ({ onClick }) => {
   return (
-    <Styledbutton OnClick={OnClick}>
-      <Styledshadow />
-      <Styledwrapper>
+    <StyledButton onClick={onClick}>
+      <StyledShadow />
+      <StyledWrapper>
         <img src={plus} />
-        <Styledlabel>タスクを追加</Styledlabel>
-      </Styledwrapper>
-    </Styledbutton>
+        <StyledLabel>タスクを追加</StyledLabel>
+      </StyledWrapper>
+    </StyledButton>
   );
 };
 export default AddTaskButton;
 
-const Styledshadow = styled.div`
+const StyledShadow = styled.div`
   position: absolute;
   background-color: ${COLOR.GREEN};
   border-radius: 12px;
   width: 100%;
   height: 100%;
 `;
-const Styledbutton = styled.button`
+const StyledButton = styled.button`
   padding: 0;
   position: relative;
   background: none;
   cursor: pointer;
   border: none;
-  & > ${Styledshadow} {
+  & > ${StyledShadow} {
     opacity: 0;
   }
   &:hover {
-    & > ${Styledshadow} {
+    & > ${StyledShadow} {
       opacity: 0.2;
     }
   }
 `;
-const Styledwrapper = styled.div`
+const StyledWrapper = styled.div`
   display: flex;
   padding: 2px 6px;
   & > img {
@@ -47,7 +47,7 @@ const Styledwrapper = styled.div`
     height: 20px;
   }
 `;
-const Styledlabel = styled.div`
+const StyledLabel = styled.div`
   color: ${COLOR.GREEN};
   margin-left: 10px;
   ${TEXT.S};

@@ -14,8 +14,8 @@ export default Checkbox;
 const Styledbox = styled.button`
   background: none;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 2px solid ${COLOR.LIGHT_GRAY};
   border-radius: 2px;
   cursor: pointer;

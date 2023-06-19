@@ -37,7 +37,6 @@ const TodoCard = () => {
             key={index}
             onTaskComplete={() => onTaskComplete(index)}
             onTaskNameChange={(value) => {
-              console.log("value---- in tsx", value);
               onTaskNameChange(value, index);
             }}
             taskName={task.name}

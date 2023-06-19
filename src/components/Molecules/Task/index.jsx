@@ -9,7 +9,7 @@ import TEXT from "../../../variables/texts";
 const Task = ({
   onTaskChange,
   onTaskComplete,
-  taskName = "taskname",
+  taskName = "",
   defaultIsEditing = false,
 }) => {
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
@@ -44,6 +44,7 @@ const StyledWrapper = styled.div`
   display: flex;
   padding: 2px 4.5px;
   margin-bottom: 10px;
+  aline-item: center;
 `;
 const StyledCheckboxWrapper = styled.div`
   display: flex;

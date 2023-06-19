@@ -18,6 +18,7 @@ const AddTaskButton = ({ onClick }) => {
 export default AddTaskButton;
 
 const StyledShadow = styled.div`
+  display: flex;
   position: absolute;
   background-color: ${COLOR.GREEN};
   border-radius: 12px;

@@ -6,27 +6,27 @@ import Task from "../../Molecules/Task";
 const TodoCard = () => {
   const [tasklist, setTasklist] = useState([]);
   const onAddTaskButtonClick = () => {
-    const NewTask = {
+    const newTask = {
       name: "",
       initializing: true,
     };
-    setTasklist(tasklist.concat(NewTask));
+    setTasklist(tasklist.concat(newTask));
   };
   const onTaskComplete = (index) => {
-    let NewTasklist = tasklist.filter((_, i) => i !== index);
-    setTasklist(NewTasklist);
+    let newTasklist = tasklist.filter((_, i) => i !== index);
+    setTasklist(newTasklist);
   };
   const onTaskNameChange = (value, index) => {
-    let NewTasklist = [...tasklist];
+    let newTasklist = [...tasklist];
     if (value === "") {
-      NewTasklist.splice(index, 1);
+      newTasklist.splice(index, 1);
     } else {
-      NewTasklist.splice(index, 1, {
+      newTasklist.splice(index, 1, {
         name: value,
         initializing: false,
       });
     }
-    setTasklist(NewTasklist);
+    setTasklist(newTasklist);
   };
   return (
     <StyledWrapper>
@@ -41,7 +41,7 @@ const TodoCard = () => {
             }}
             taskName={task.name}
             defaultIsEditing={task.initializing}
-          ></Task>
+          />
         ))}
       </StyledTaskList>
     </StyledWrapper>

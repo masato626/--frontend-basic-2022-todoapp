@@ -52,6 +52,7 @@ export default TodoCard;
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 const StyledTaskList = styled.div`
   margin-top: 14px;

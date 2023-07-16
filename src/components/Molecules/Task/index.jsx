@@ -52,11 +52,11 @@ const StyledCheckboxWrapper = styled.div`
 `;
 const StyledNameAndButtonWrapper = styled.div`
   display: flex;
-  width: 214px;
+  width:100%;
 `;
 const StyledTaskName = styled.div`
   display: flex;
-  width: 214px;
+  width: 100%;
   ${TEXT.S}
   color:${COLOR.LIGHT_GRAY};
 `;

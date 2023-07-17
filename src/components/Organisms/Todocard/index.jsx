@@ -13,11 +13,11 @@ const TodoCard = () => {
     setTasklist(tasklist.concat(newTask));
   };
   const onTaskComplete = (index) => {
-    let newTasklist = tasklist.filter((_, i) => i !== index);
+    const newTasklist = tasklist.filter((_, i) => i !== index);
     setTasklist(newTasklist);
   };
   const onTaskNameChange = (value, index) => {
-    let newTasklist = [...tasklist];
+    const newTasklist = [...tasklist];
     if (value === "") {
       newTasklist.splice(index, 1);
     } else {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../../Atoms/Title";
 import Todocard from "../../Organisms/Todocard";
-import BREAKPOINT from "../../../variables/breakpoint";
+
 
 const MainPage = () => {
   return (

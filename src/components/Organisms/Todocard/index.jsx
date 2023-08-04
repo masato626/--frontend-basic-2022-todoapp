@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import COLOR from "../../../variables/color";
 import AddTaskButton from "../../Atoms/AddTaskButton";
 import Task from "../../Molecules/Task";
 
@@ -52,6 +53,7 @@ export default TodoCard;
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: ${COLOR.LIGHT_BLACK};
 `;
 const StyledTaskList = styled.div`
   margin-top: 14px;

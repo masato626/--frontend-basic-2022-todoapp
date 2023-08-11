@@ -20,13 +20,17 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
   @media screen and (max-width: ${BREAKPOINT.MEDIUM}) {
-    padding: 40px 20px 0 20px;
+    padding-top: 20px;
   }
 `;
 const StyledTodoCardWrapper = styled.div`
-  width: 100%;
+  width: 500px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  @media screen and (max-width: ${BREAKPOINT.MEDIUM}) {
+    width: 100%;
+  }
 `;

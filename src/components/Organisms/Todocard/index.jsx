@@ -59,6 +59,4 @@ const StyledWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
 `;
-const StyledTaskList = styled.div`
-  margin-top: 14px;
-`;
+const StyledTaskList = styled.div``;

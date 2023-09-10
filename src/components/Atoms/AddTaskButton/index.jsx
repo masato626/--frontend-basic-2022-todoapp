@@ -22,8 +22,8 @@ const StyledShadow = styled.div`
   position: absolute;
   background-color: ${COLOR.GREEN};
   border-radius: 12px;
-  width: 100%;
-  height: 100%;
+  width: 126px;
+  height: 24px;
 `;
 const StyledButton = styled.button`
   padding: 0;

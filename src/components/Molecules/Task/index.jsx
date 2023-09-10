@@ -43,7 +43,7 @@ export default Task;
 const StyledWrapper = styled.div`
   display: flex;
   padding: 2px 4.5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   aline-item: center;
 `;
 const StyledCheckboxWrapper = styled.div`
@@ -52,7 +52,7 @@ const StyledCheckboxWrapper = styled.div`
 `;
 const StyledNameAndButtonWrapper = styled.div`
   display: flex;
-  width:100%;
+  width: 100%;
 `;
 const StyledTaskName = styled.div`
   display: flex;

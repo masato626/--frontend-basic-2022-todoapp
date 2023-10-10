@@ -16,11 +16,6 @@ const AlertManager = () => {
     }, 5000);
     setTimeoutHandler(newTimeoutHandler);
   }, [AlertHandlerContext]);
-  return (
-    <Alert
-      visible={AlertHandlerContext.visible}
-      errorText={AlertHandlerContext.errorText}
-    />
-  );
+  return <Alert />;
 };
 export default AlertManager;

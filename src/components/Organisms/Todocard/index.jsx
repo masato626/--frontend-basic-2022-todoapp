@@ -7,6 +7,7 @@ import Task from "../../Molecules/Task";
 
 const TodoCard = () => {
   const [tasklist, setTasklist] = useState([]);
+  const AlertHandlerContext = useAlertHandlerContext();
   const onAddTaskButtonClick = () => {
     const newTask = {
       name: "",

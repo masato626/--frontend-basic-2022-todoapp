@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-const AlertHandlerContext = createContext();
+export const AlertHandlerContext = createContext();
 
 export const AlertHandlerProvider = ({ children }) => {
   const [alertState, setAlertState] = useState({

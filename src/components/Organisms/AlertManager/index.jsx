@@ -1,5 +1,5 @@
 import { useAlertHandlerContext } from "../../../contexts/alert_handler";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Alert from "../../Atoms/Alert";
 
 const AlertManager = () => {
@@ -8,7 +8,7 @@ const AlertManager = () => {
 
   useEffect(() => {
     if (timeoutHandler !== null) {
-      setTimeout(timeoutHandler);
+      window.clearTimeout(timeoutHandler);
     }
     const newTimeoutHandler = setTimeout(() => {
       AlertHandlerContext.closeAlert();
@@ -16,6 +16,11 @@ const AlertManager = () => {
     }, 5000);
     setTimeoutHandler(newTimeoutHandler);
   }, [AlertHandlerContext]);
-  return <Alert />;
+  return (
+    <Alert
+      visible={AlertHandlerContext.visible}
+      errorText={AlertHandlerContext.errorText}
+    />
+  );
 };
 export default AlertManager;

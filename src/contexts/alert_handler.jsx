@@ -17,6 +17,7 @@ export const AlertHandlerProvider = ({ children }) => {
 
   const closeAlert = () => {
     setAlertState({
+      ...alertState,
       visible: false,
     });
   };

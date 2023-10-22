@@ -3,9 +3,9 @@ import styled from "styled-components";
 import COLOR from "../../../variables/color";
 import TEXT from "../../../variables/texts";
 
-const Alert = ({ isActive, errorText }) => {
+const Alert = ({ visible, errorText }) => {
   return (
-    <StyledContent isActive={isActive}>
+    <StyledContent visible={visible}>
       <StyledText>{errorText}</StyledText>
     </StyledContent>
   );
@@ -20,10 +20,13 @@ const StyledContent = styled.div`
   max-width: 400px;
   border-radius: 4px;
   opacity: 0;
+  margin: 0 auto;
+  transition: 0.5s;
   ${(props) =>
-    props.isActive &&
+    props.visible &&
     `
    opacity: 1;
+   
 `}
 `;
 const StyledText = styled.div`

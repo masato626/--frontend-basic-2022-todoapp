@@ -1,4 +1,4 @@
-import { useAlertHandlerContext } from "../../../contexts/alert_handler";
+import { useAlertHandlerContext } from "../../../contexts/AlertHandler";
 import React, { useEffect, useState } from "react";
 import Alert from "../../Atoms/Alert";
 

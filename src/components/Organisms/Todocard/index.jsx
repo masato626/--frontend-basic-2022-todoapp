@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useAlertHandlerContext } from "../../../contexts/AlertHandler";
 import COLOR from "../../../variables/color";
 import AddTaskButton from "../../Atoms/AddTaskButton";
 import Task from "../../Molecules/Task";
 
 const TodoCard = () => {
   const [tasklist, setTasklist] = useState([]);
+  const AlertHandlerContext = useAlertHandlerContext();
   const onAddTaskButtonClick = () => {
     const newTask = {
       name: "",
@@ -21,6 +23,7 @@ const TodoCard = () => {
     const newTasklist = [...tasklist];
     if (value === "") {
       newTasklist.splice(index, 1);
+      AlertHandlerContext.setAlert("please write your task");
     } else {
       newTasklist.splice(index, 1, {
         name: value,
